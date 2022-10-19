@@ -1,0 +1,31 @@
+.room{
+  background-color: #e3cfc1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.wrap {
+  width: auto;
+  height: auto;
+  margin: 5px;
+  justify-content: center;
+  .room-l-side {
+    margin: 5px;
+    .img-thumbnail {
+    width: 240px;
+    height: 120px;
+    margin: 3px;
+    cursor: pointer;
+    }
+  }
+}
+.room-r-side{
+  width: 1000px;
+  height: 400px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  h1{
+    cursor: pointer;
+  }
+}

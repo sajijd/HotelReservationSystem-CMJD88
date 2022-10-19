@@ -1,0 +1,31 @@
+<div class="main-wrap" >
+  <div class="ham-wrap" (click)="toggleSlider()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+</div>
+
+<div class="right-slider" *ngIf="sliderState" [@rightSlider]>
+  <ul class="nav-wrap">
+    <li>
+      <a routerLink='./dashboard/guest-management'>Guest management</a>
+    </li>
+    <li>
+      <a href="#">Lobby</a>
+    </li>
+    <li>
+      <a href="#">Travel</a>
+    </li>
+    <li>
+      <a href="#">Games</a>
+    </li>
+    <li>
+      <a href="#">We are</a>
+    </li>
+    <li>
+      <a href="#">Help center</a>
+    </li>
+  </ul>
+</div>
+

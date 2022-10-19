@@ -1,0 +1,50 @@
+<form [formGroup]="signupForm" (ngSubmit)="signUp()">
+<h3>Sign Up:</h3>
+<hr>
+<div class="outer">
+
+  <div class="mb-3">
+    <mat-form-field class="full-width">
+      <mat-label>Name</mat-label>
+      <input formControlName="name" matInput placeholder="first    last" type="text">
+      <mat-error>Name is required..</mat-error>
+    </mat-form-field>
+  </div>
+
+  <div class="mb-3">
+    <mat-form-field class="full-width">
+      <mat-label>E-mail address</mat-label>
+      <input formControlName="email" matInput placeholder="name@example.com" type="email">
+      <mat-error>email is required..</mat-error>
+    </mat-form-field>
+  </div>
+
+  <div class="mb-3">
+    <mat-form-field class="full-width">
+      <mat-label>Contact number</mat-label>
+      <input formControlName="contactNumber" matInput placeholder="+94.." type="number">
+      <mat-error>contact number is required..</mat-error>
+    </mat-form-field>
+  </div>
+
+  <div class="mb-3">
+    <mat-form-field class="full-width">
+      <mat-label>Password</mat-label>
+      <input formControlName="password" matInput  type="password">
+      <mat-error>password is required..</mat-error>
+    </mat-form-field>
+  </div>
+
+  <div class="mb-3">
+    <mat-form-field class="full-width">
+      <mat-label>Retype Password</mat-label>
+      <input formControlName="retypePassword" matInput  type="password">
+      <mat-error>password is required..</mat-error>
+    </mat-form-field>
+  </div>
+<div class="b1">
+   <button  type="Submit" >Submit</button>
+</div>
+  </div>
+
+</form>

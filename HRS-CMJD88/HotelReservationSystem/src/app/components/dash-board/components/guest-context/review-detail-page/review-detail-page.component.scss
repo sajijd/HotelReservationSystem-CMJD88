@@ -1,0 +1,43 @@
+
+.outer{
+ align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding:5px;
+  border:2px solid black;
+  background-color: #bad1f5;
+}
+.full-width{
+  width: 90%;
+}
+.mb-3{
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #617078;
+  width: 30%;
+}
+.heder-text{
+  color: red;
+
+  p{
+    color: #2980b9;
+  }
+
+}
+.form-control{
+  margin: 10px;
+}
+.b1{
+  margin-left: 200px;
+  cursor: pointer;
+  .button{
+    margin: 20px;
+
+  }
+}
+.form-check{
+  margin-left: 30px;
+  background-color: #c1f7e4;
+
+}

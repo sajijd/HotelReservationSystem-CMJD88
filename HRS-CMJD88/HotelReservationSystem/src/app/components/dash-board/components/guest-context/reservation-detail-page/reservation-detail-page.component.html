@@ -1,0 +1,97 @@
+<form [formGroup]="GuestReservationForm" (ngSubmit)="uploadData()">
+<div class ="wrap">
+ <div class="heder-text">
+  <h1>Reservation Form</h1>
+  <p>pleace fill in this Hotel Reservation From to book a room for the period you would like to stay. </p>
+  <hr>
+ </div>
+  <div class="mb-3">
+    <mat-form-field class="full-width">
+      <mat-label>Name</mat-label>
+      <input formControlName="name" matInput placeholder="first    last" type="text">
+      <mat-error>Name is required..</mat-error>
+    </mat-form-field>
+  </div>
+  <div class="mb-3">
+    <mat-form-field class="full-width">
+      <mat-label>e-mail</mat-label>
+      <input formControlName="email" matInput placeholder="name@example.com" type="email">
+      <mat-error>email is required..</mat-error>
+    </mat-form-field>
+  </div>
+  <div class="mb-3">
+    <mat-form-field class="full-width">
+      <mat-label>Contact Number</mat-label>
+      <input formControlName="contactNumber" matInput placeholder="+94.." type="number">
+      <mat-error>contact number is required..</mat-error>
+    </mat-form-field>
+  </div>
+  <div class="mb-3">
+    <mat-form-field class="full-width">
+      <mat-label>Check-In</mat-label>
+      <input formControlName="checkInDate" matInput placeholder="mm\dd\yyyy" type="date">
+      <mat-error>check-in date is required..</mat-error>
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Check-Out</mat-label>
+      <input formControlName="checkOutDate" matInput placeholder="mm\dd\yyyy" type="date">
+      <mat-error>check-out date required..</mat-error>
+    </mat-form-field>
+  </div>
+  <hr>
+  <div class="quc">
+    Which rooms would you like to book in SINGLE ?
+    <div class="dropdown">
+      <ul class="dropdown-menu" >
+        <li><a class="dropdown-item" href="./assets/suites-1.jpg">RoomNo:S-100</a>
+          <input class="form-check-input" type="checkbox" value="" >
+        </li>
+        <li><a class="dropdown-item" href="./assets/suites-2.jpg">RoomNo:S-102</a>
+          <input class="form-check-input" type="checkbox" value="" >
+        </li>
+        <li><a class="dropdown-item" href="./assets/suites-3.jpg">RoomNo:S-103</a>
+          <input class="form-check-input" type="checkbox" value="" >
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <div class="quc">
+    Which rooms would you like to book in DOUBLE ?
+    <div class="dropdown">
+      <ul class="dropdown-menu" >
+        <li><a class="dropdown-item" href="./assets/suites-4.jpg">RoomNo:D-150</a>
+          <input class="form-check-input" type="checkbox" value="false" >
+        </li>
+        <li><a class="dropdown-item" href="./assets/suites-5.jpg">RoomNo:D-151</a>
+          <input class="form-check-input" type="checkbox" value="" >
+        </li>
+        <li><a class="dropdown-item" href="./assets/img.png">RoomNo:D-152</a>
+          <input class="form-check-input" type="checkbox" value="" >
+        </li>
+      </ul>
+    </div>
+
+    <p>CHOOSE A LIKE ONE:</p>
+    <div class="mb-3">
+      <mat-form-field class="full-width">
+        <mat-label>Room No</mat-label>
+        <input formControlName="roomNumber" matInput placeholder="S-001 OR D-150" type="text">
+      </mat-form-field>
+    </div>
+  </div>
+  <br>
+  <div class="mb-3">
+    <mat-form-field class="full-width">
+      <mat-label>Special mentions, requests or requirements :</mat-label>
+      <textarea formControlName="special" matInput placeholder="type here"></textarea>
+      <mat-error>room number is required..</mat-error>
+    </mat-form-field>
+  </div>
+  <div class="example-button-row" >
+      <button [disabled]="GuestReservationForm.invalid" mat-raised-button color="primary"  type="submit" >Reserve</button>
+     <button mat-raised-button>Cancel</button>
+  </div>
+</div>
+
+</form>
